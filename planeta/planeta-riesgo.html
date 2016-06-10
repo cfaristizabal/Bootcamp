@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Párrafos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+    <div class="container">
+      <!--Genera el 'brand' del header-->
+      <div class="nav-header">
+        <a class="navbar-brand" href="#">El Juego</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Beneficios</a>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+          <input class="form-control" type="text" placeholder="Search">
+          <button class="btn btn-success-outline" type="submit">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Ir a otro sitio</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>El planeta está en riesgo</h1>
+      <p>Sálcalo jugando este <strong>increíble</strong> juego en línea</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Empezar ahora</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Multijugador</h3>
+        <p>Si, juégalo con tus mejores amigos sin importar en dónde se encuentren. Comunícate en tiempo real con ellos y salva el mundo. Sí, salva el mundo!</p>
+        <p><a class="btn btn-success btn-lg" href="#" role="button">Invitar Amigos</a>     <a class="btn btn-default btn-lg" href="#" role="button">Jugar solo</a></p>
+      </div>
+      <div class="col-md-4">
+        <h3>Divertido</h3>
+        <p>Si, entre más juegues, más divertido será el juego. Juega por horas, días o meses. Recuerda que lo importante no es ganar, aunque ganar es más divertido.</p>
+        <p><a class="btn btn-success btn-lg" href="#" role="button">Sí, quiero jugar</a>    <a class="btn btn-default btn-lg" href="#" role="button">No, ahora no puedo</a></p>
+      </div>
+      <div class="col-md-4">
+        <h3>Compra</h3>
+        <p>Si, queremos que juegues. Pero también queremos que compres. Las compras son muy importantes para salvar el mundo. Esperamos que compres.</p>
+        <p><a class="btn btn-success btn-lg" href="#" role="button">Quiero comprar</a>     <a class="btn btn-default btn-lg" href="#" role="button">No tengo plata</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="panel panel-default">
+      <!--<div class="panel-heading"></div>-->
+      <!--<div class="panel-body">-->
+
+      <!--</div>-->
+    </div>
+    <p class="alert alert-info" role="alert"><strong>¡Atención!</strong> El juego es muy popular. Registratate antes de que sea tarde!</p>
+    <h2>Puntaje</h2>
+    <table class="table">
+      <tr>
+        <th>Nombre</th>
+        <th>Puntos</th>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>8,300</td>
+      </tr>
+      <tr>
+        <td>Pablo</td>
+        <td>4,100</td>
+      </tr>
+    </table>
+  </div>
+  <!--</div>
+    <div class="alert alert-info" role="alert"><strong>¡Atención!</strong> El juego es muy popular. Registratate antes de que sea tarde!</div>
+  </div>-->
+  </br>
+  <div class="row">
+    <div class="container col-xs-4 col-xs-offset-4">
+       <p class="alert alert-danger" role="alert"><strong>Lo sentimos!</strong> En este momento no es posible registrarse</p>
+
+      <form>
+        <div class="form-group">
+          <h3>Registro</h3>
+          <label for="emailbox">Email address</label>
+          <input type="email" class="form-control" id="emailbox" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label for="passwordbox">Password</label>
+          <input type="password" class="form-control" id="passwordbox" placeholder="Password">
+        </div>
+        <!--<div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>-->
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Entiendo las condiciones y eso
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Registrarse</button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <h3>Registrate desde la consola</h3>
+    <div class="jumbotron">
+      <p>$ gem install eljuego</p>
+      <p>$ eljuego sign up</p>
+      <p>$ username:</p>
+      <p>$ password:</p>
+      <p>$ eljuego play</p>
+    </div>
+  </div>
+</body>
+</html>
