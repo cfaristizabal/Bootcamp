@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci</title>
+</head>
+<body>
+  <input type="text" id="fibo" />
+
+  <button onclick=fibonacci() >Fibonacci</button>
+  <script>
+    var fibonacci = function(){
+      var  number = parseInt(document.getElementById('fibo').value);
+      var f0  = 0;
+      var f1 = 1;
+      if (number === 0) {
+        alert (f0);
+      }
+      else if (number === 1) {
+        alert (f1);
+      }
+      else{
+        var r1 = f0;
+        var r2 = f1;
+        var r = 0
+        for (var i = 2; i < number + 1; i++) {
+          r = r1 + r2
+          r1 = r2
+          r2 = r
+        }
+        alert (r);
+      }
+    }
+
+  </script>
+</body>
+</html>
