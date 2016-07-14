@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template</title>
+
+  <style>
+    .square {
+      display: inline-block;
+      background: blue;
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    .square:nth-child(odd) {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="squares">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <button> Agregar cuadrado </button>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('button').on('click', function(){
+
+          $('.squares').append('<div class="square"></div>')
+      });
+    });
+  </script>
+</body>
+</html>
